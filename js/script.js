@@ -1,10 +1,10 @@
 /* ============================== typing animation ============================ */
 var typed = new Typed(".typing", {
-        strings:["Student","Dreamer","Software Engineer],
+        strings:["Dreamer","Software Engineer],
         backSpeed: 40,
         typeSpeed: 40,
         loop: true
-    });
+    })
 /* ============================== Aside ============================ */
 const nav = document.querySelector(".nav"),
       navList = nav.querySelectorAll("li"),
