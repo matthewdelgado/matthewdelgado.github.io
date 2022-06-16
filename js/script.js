@@ -1,9 +1,9 @@
 /* ============================== typing animation ============================ */
-var typed = new Typed(".typing", {
+var typed = new Typed(".typing",{
         strings:["Dreamer","Software Engineer],
-        backSpeed: 40,
-        typeSpeed: 80,
-        loop: true
+        backSpeed:40,
+        typeSpeed:80,
+        loop:true
 })
 /* ============================== Aside ============================ */
 const nav = document.querySelector(".nav"),
