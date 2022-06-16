@@ -2,9 +2,9 @@
 var typed = new Typed(".typing", {
         strings:["Dreamer","Software Engineer],
         backSpeed: 40,
-        typeSpeed: 40,
+        typeSpeed: 80,
         loop: true
-    })
+})
 /* ============================== Aside ============================ */
 const nav = document.querySelector(".nav"),
       navList = nav.querySelectorAll("li"),
