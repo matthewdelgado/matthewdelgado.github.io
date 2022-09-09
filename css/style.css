@@ -158,7 +158,6 @@ ul
 {
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
-/* aside */
 .aside
 {
     width: 270px;
@@ -302,7 +301,6 @@ ul
 {
     margin-right: 15px;
 }
-/* home */
 .home
 {
     min-height: 100vh;
@@ -376,7 +374,6 @@ h3.my-profession
     border-radius: 5px;
     height: 400px;
 }
-/* About */
 .about .about-content
 {
     flex: 0 0 100%;
@@ -571,7 +568,6 @@ h3.my-profession
     text-align: justify;
     color: var(--text-black-700);
 }
-/* service */
 .service .container
 {
     padding-bottom: 40px;
@@ -635,7 +631,6 @@ h3.my-profession
     color: var(--text-black-700);
     line-height: 25px;
 }
-/* portfolio */
 .portfolio .container
 {
     padding-bottom: 40px;
@@ -669,7 +664,6 @@ h3.my-profession
     width: 100%;
     display: block;
 }
-/* contact */
 .contact-title
 {
     color: var(--skin-color);
