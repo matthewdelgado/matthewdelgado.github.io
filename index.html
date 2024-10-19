@@ -1,398 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Matthew Delgado</title>
-  <!-- ===== CSS Files ===== -->
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/skins/color-1.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <!-- ====== Style Switcher ====== -->
-  <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
-  <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
-  <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
-  <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
-  <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
-  <link rel="stylesheet" href="css/style-switcher.css">
+  <title>Resume - Matthew Delgado</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1,
+    h2,
+    h3 {
+      color: #333;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+  </style>
 </head>
+
 <body>
-  <div class="main-container">
-    <!-- Sidebar -->
-    <div class="aside">
-      <!-- Logo -->
-      <div class="logo">
-        <a href="#"><span>M</span>atthew</a>
-      </div>
-      <!-- Navigation -->
-      <div class="nav-toggler"><span></span></div>
-      <ul class="nav">
-        <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
-        <li><a href="#about"><i class="fa fa-user"></i>About</a></li>
-        <li><a href="#services"><i class="fa fa-list"></i>Projects</a></li>
-        <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
-      </ul>
-    </div>
-    <div class="main-content">
-      <!-- ===== Home Section Start ===== -->
-      <section class="home active section" id="home"> 
-        <div class="container">
-          <div class="row">
-            <div class="home-info padd-15">
-              <h3 class="hello">Hello, my name is <span class="name">Matthew Delgado</span></h3>
-              <h3 class="my-profession">I'm a <span class="typing">Software Engineer</span></h3>
-              <p>Matthew Delgado is a full-time student at the Florida Institute of Technology who is majoring in Computer Engineering. His studies focus on developing embedded systems and full-stack web applications.</p>
-              <a href="https://www.linkedin.com/in/matthewdelgado2000/" class="btn">Resume</a>
-            </div>
-            <div class="home-img padd-15">
-              <img src="images/hero.jpg" alt="Matthew Delgado Headshot">
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- ===== About Section Start ===== -->
-      <section class="about section" id="about"> 
-        <div class="container">
-          <div class="row">
-            <div class="section-title padd-15">
-              <h2>About Me</h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="about-content padd-15">
-              <div class="row">
-                <!-- Personal Info -->
-                <div class="personal-info padd-15">
-                  <div class="row">
-                    <div class="info-item padd-15">
-                      <p>University : <span>Florida Insitute of Technology</span></p>
-                    </div>
-                    <div class="info-item padd-15">
-                      <p>Major : <span>Computer Engineering</span></p>
-                    </div>
-                    <div class="info-item padd-15">
-                      <p>Degree : <span>Bachelor of Science</span></p>
-                    </div>
-                    <div class="info-item padd-15">
-                      <p>Citizenship: <span>United States</span></p>
-                    </div>                    
-                    <div class="info-item padd-15">
-                      <p>Email : <span>mdelgado2020@my.fit.edu</span></p>
-                    </div>
-                    <div class="info-item padd-15">
-                      <p>Linkedin : <span>linkedin.com/in/matthewdelgado2000</span></p>
-                    </div>
-                    <div class="info-item padd-15">
-                      <p>Seeking : <span>Full-time Software Engineer opportunities</span></p>
-                    </div>
-                    <div class="info-item padd-15">
-                      <p>GitHub : <span>github.com/matthewdelgado</span></p>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="buttons padd-15">
-                      <a href="#contact" data-section-index="1" class="btn hire-me">Contact Me</a>
-                    </div>
-                  </div>
-                </div>
-                <!-- Skills -->
-                <div class="skills padd-15">
-                  <div class="row">
-                    <div class="skill-item padd-15">
-                      <h5>C/C++</h5>
-                      <div class="progress">
-                        <div class="progress-in" style="width: 95%;"></div>
-                        <div class="skill-percent">95%</div>
-                      </div>
-                    </div>
-                    <div class="skill-item padd-15">
-                      <h5>Embedded Systems</h5>
-                      <div class="progress">
-                        <div class="progress-in" style="width: 85%;"></div>
-                        <div class="skill-percent">85%</div>
-                      </div>
-                    </div>
-                    <div class="skill-item padd-15">
-                      <h5>Python</h5>
-                      <div class="progress">
-                        <div class="progress-in" style="width: 80%;"></div>
-                        <div class="skill-percent">80%</div>
-                      </div>
-                    </div>
-                    <div class="skill-item padd-15">
-                      <h5>Linux</h5>
-                      <div class="progress">
-                        <div class="progress-in" style="width: 80%;"></div>
-                        <div class="skill-percent">80%</div>
-                      </div>
-                    </div>
-                    <div class="skill-item padd-15">
-                      <h5>Bash</h5>
-                      <div class="progress">
-                        <div class="progress-in" style="width: 75%;"></div>
-                        <div class="skill-percent">75%</div>
-                      </div>
-                    </div>
-                    <div class="skill-item padd-15">
-                      <h5>Git</h5>
-                      <div class="progress">
-                        <div class="progress-in" style="width: 75%;"></div>
-                        <div class="skill-percent">75%</div>
-                      </div>
-                    </div>
-                    <div class="skill-item padd-15">
-                      <h5>MATLAB</h5>
-                      <div class="progress">
-                        <div class="progress-in" style="width: 75%;"></div>
-                        <div class="skill-percent">75%</div>
-                      </div>
-                    </div>
-                    <div class="skill-item padd-15">
-                      <h5>SolidWorks</h5>
-                      <div class="progress">
-                        <div class="progress-in" style="width: 60%;"></div>
-                        <div class="skill-percent">60%</div>
-                      </div>
-                    </div>
-                    <div class="skill-item padd-15">
-                      <h5>Technical Communication</h5>
-                      <div class="progress">
-                        <div class="progress-in" style="width: 50%;"></div>
-                        <div class="skill-percent">50%</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <!-- Education -->
-                <div class="education padd-15">
-                  <h3 class="title">Education</h3>
-                  <div class="row">
-                    <div class="timeline-box padd-15">
-                      <div class="timeline shadow-dark">
-                        <!-- ===== Timeline ===== -->
-                        <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h3 class="timeline-date">
-                            <i class="fa fa-calendar"></i> 2020 - 2023
-                          </h3>
-                          <h4 class="timeline-title">Florida Institute of Technology</h4>                
-                          <p class="timeline-text">Relevant Curriculum:</p>
-                          <p class="timeline-text">&#8226 Circuit Theory 1 and 2</p>
-                          <p class="timeline-text">&#8226 Computer Architecture</p>
-                          <p class="timeline-text">&#8226 Computer Design</p>  
-                          <p class="timeline-text">&#8226 Digital Logic</p>  
-                          <p class="timeline-text">&#8226 Digital State Machines</p>   
-                          <p class="timeline-text">&#8226 Microcomputer Systems 1 and 2</p>  
-                          <p class="timeline-text">&#8226 Operating Systems Concepts</p>  
-                          <p class="timeline-text">&#8226 Software/Hardware Integration</p>  
-                          <p class="timeline-text">&#8226 Differential Equations and Linear Algebra</p>  
-                          <p class="timeline-text">&#8226 Calculus 2 and 3</p>    
-                        </div>
-                        <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                            <h3 class="timeline-date"><i class="fa fa-calendar"></i> 2018 - 2019</h3>
-                            <h4 class="timeline-title">Virginia Tech</h4>
-                            <p class="timeline-text">Relevant Curriculum:</p>
-                            <p class="timeline-text">&#8226 General Engineering</p>  
-                            <p class="timeline-text">&#8226 Calculus 1</p>   
-                            <p class="timeline-text">&#8226 Chemistry and Chemistry Lab</p>   
-                          </div>
-                      </div>
-                    </div> 
-                  </div> 
-                </div>
-                <!-- Professional Experience -->
-                <div class="experience padd-15">
-                  <h3 class="title">Professional Experience</h3>
-                  <div class="row">
-                    <div class="timeline-box padd-15">
-                      <div class="timeline shadow-dark">
-                        <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h3 class="timeline-date"><i class="fa fa-calendar"></i> Summer 2022</h3>
-                          <h4 class="timeline-title">L3Harris Technologies</h4>
-                          <h4 class="timeline-title">Embedded Software Engineer Intern</h4>
-                          <p class="timeline-text">Developed software test procedures, software programs, and related documentation. Participated in analysis, design, implementation, integration, and test of embedded software.</p>
-                        </div>
-                        <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h3 class="timeline-date"><i class="fa fa-calendar"></i> Fall 2021</h3>
-                          <h4 class="timeline-title">LeNgineer</h4>
-                          <h4 class="timeline-title">Software Engineer Intern</h4>
-                          <p class="timeline-text">Evaluated EEG data in Python and developed an algorithm to maintain accuracy and portability of data.</p>
-                        </div>
-                        <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h3 class="timeline-date"><i class="fa fa-calendar"></i> 2021 - 2021</h3>
-                          <h4 class="timeline-title">IBM</h4>
-                          <h4 class="timeline-title">Technical Solutions Engineer Intern</h4>
-                          <p class="timeline-text">Participated in the design, build, test of workload migration phases for AIOps-based applications. Presented three live demos for IBM's Watson AIOps software.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- ===== Services Section Start ===== -->
-      <section class="service section" id="services">
-        <div class="container">
-          <div class="row">
-            <div class="section-title padd-15">
-              <h2>Projects</h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="service-item padd-15">
-              <div class="service-item-inner">
-                <div class="icon">
-                  <i class="fa fa-mobile-alt"></i>
-                </div>
-                <h4>Morse Code Beeper</h4>
-                <p>Developed embedded software to allow for communication across multiple Arduino chips using SPI. Interfaced an LCD screen, wireless transceiver module, EEPROM, and a buzzer to mimic the actions of a beeper.</p>
-              </div>
-            </div>
-             <div class="service-item padd-15">
-              <div class="service-item-inner">
-                <div class="icon">
-                  <i class="fa fa-laptop-code"></i>
-                </div>
-                <h4>Intern Evaluation Software</h4>
-                <p>A team of interns and myself tackled the challenge of replacing software used to collect intern evaluation data from their host managers. I evaluated the efficiency of using IBM’s Cloud Pak for Data to sort, filter and display data as needed in real-time.</p>
-              </div>
-            </div>
-             <div class="service-item padd-15">
-              <div class="service-item-inner">
-                <div class="icon">
-                  <i class="fa fa-palette"></i>
-                </div>
-                <h4>Simon Says</h4>
-                <p>Wrote a program that interfaced an Arduino which displayed random generated light sequences that the user would have to repeat. If repeated correctly the code would add complexity to the light sequence by making additions to the sequence and displaying it to the user quicker. This could be repeated for any amount of levels desired by the user.</p>
-              </div>
-            </div>
-             <div class="service-item padd-15">
-              <div class="service-item-inner">
-                <div class="icon">
-                  <i class="fa fa-code"></i>
-                </div>
-                <h4>Stimulus Check Calculator</h4>
-                <p>During the COVID-19 pandemic, I wrote the back-end code for a calculator in Python. It determined how much money the user would receive in their stimulus check based on number of dependents and their income.</p>
-              </div>
-            </div>
-             <div class="service-item padd-15">
-              <div class="service-item-inner">
-                <div class="icon">
-                  <i class="fa fa-search"></i>
-                </div>
-                <h4>Wind Turbine Design</h4>
-                <p>A team project to design an effective mechanical, electrical, and aerodynamic wind turbine. My role was to develop an energy cost analysis, maximizing energy production and balancing environmental impacts.</p>
-              </div>
-            </div>
-             <div class="service-item padd-15">
-              <div class="service-item-inner">
-                <div class="icon">
-                  <i class="fa fa-bullhorn"></i>
-                </div>
-                <h4>Line Following Robot</h4>
-                <p>I programmed a robot to follow a line drawn by a user. The robot had a chassis with a left and right motor, three sensors that detected the line and an Arduino board. The code was written in MATLAB.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Contact Section -->
-      <section class="contact section" id="contact">
-        <div class="container">
-          <div class="row">
-            <div class="section-title padd-15">
-              <h2>Contact Me</h2>
-            </div>
-          </div>
-          <div class="row">
-             <div class="contact-info-item padd-15">
-              <div class="icon">
-                <a href="mailto:mdelgado2020@my.fit.edu">
-                  <i class="fa fa-envelope"></i>
-                  <h4>Email</h4>
-                </a>
-              </div>
-            </div>
-            <div class="contact-info-item padd-15">
-              <div class="icon">
-                <a href="https://linkedin.com/in/matthewdelgado2000">
-                  <i class="fa fa-globe-europe"></i>
-                  <h4>Linkedin</h4>
-                </a>
-              </div>
-            </div>
-          </div>
-          <h4 class="contact-sub-title padd-15">Send me a message.</h4>
-          <!-- ====== Contact Form ====== -->
-          <div class="row">
-            <div class="contact-form padd-15">
-              <div class="row">
-                <div class="form-item col-6 padd-15">
-                  <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Full Name">
-                  </div>
-                </div>
-                <div class="form-item col-6 padd-15">
-                  <div class="form-group">
-                    <input type="email" class="form-control" placeholder="Email">
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="form-item col-12 padd-15">
-                  <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Subject">
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="form-item col-12 padd-15">
-                  <div class="form-group">
-                    <textarea name="" class="form-control" id=""  placeholder="Message"></textarea>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="form-item col-12 padd-15">
-                  <button type="submit" class="btn">Send</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
+  <div class="container">
+    <h1>Matthew Delgado</h1>
+    <p>
+      <a href="#">LinkedIn</a> | <a href="#">GitHub</a> | <a href="#">Portfolio</a> | MatthewDelgado.SWE@Gmail.com
+    </p>
+
+    <h2>Education</h2>
+    <p><strong>Bachelor of Science, Computer Engineering, December 2023</strong><br>
+      Florida Institute of Technology
+    </p>
+
+    <h2>Technical Skills</h2>
+    <p><strong>Coding languages and frameworks:</strong> Angular (HTML, SCSS, TypeScript), C++, PHP, Python, SQL, Vue.js
+    </p>
+    <p><strong>Other technical tools:</strong> Agile, Docker, Git, Google Cloud, Hugging Face, Jira, Linux, MySQL,
+      Node.js, RESTful APIs, Vim</p>
+
+    <h2>Professional Experience</h2>
+
+    <h3>Associate Software Engineer | L3Harris Technologies | Feb 2024 - Current</h3>
+    <ul>
+      <li>Designed, implemented, maintained, and tested mission critical embedded software in C++ on real-time Linux
+        based environments.</li>
+      <li>Led the design initiative on five critical new Python-based products for prospective clients.</li>
+      <li>Demonstrated working prototypes to clients to secure future funding for our team.</li>
+    </ul>
+
+    <h3>Software Engineer Intern | Up-Rev | Jul 2023 - Jan 2024</h3>
+    <ul>
+      <li>Maintained a web-based app, utilized by senior managers for accurate project cost estimation, ensuring
+        functionality and user satisfaction through continuous development and performance improvements.</li>
+      <li>Transitioned the app’s backend from a PHP-based API to a Python-based RESTful API utilizing FastAPI, resulting
+        in enhanced data processing speed and improved integration capabilities with other systems.</li>
+    </ul>
+
+    <h3>Software Engineer Intern | L3Harris Technologies | May 2023 - Jul 2023</h3>
+    <ul>
+      <li>Engineered a Streamlit full-stack web app using Python, to enable user interaction with open-source large
+        language models. This application was uniquely fine-tuned with internal company data to enhance performance and
+        accuracy, demonstrating a pivotal step towards integrating AI into business processes.</li>
+      <li>Directed and optimized the Agile project management of six interns using Atlassian’s Jira, meticulously
+        documenting progress and milestones. This leadership streamlined project workflows and fostered a collaborative
+        and productive internship experience, contributing significantly to the project's success.</li>
+    </ul>
+
+    <h3>Software Engineer Intern | Up-Rev Inc | Aug 2022 - May 2023</h3>
+    <ul>
+      <li>Spearheaded the development of full-stack, cross-platform applications utilizing Angular, MySQL, PHP, and
+        Docker, focusing on crafting responsive, user-centric designs and ensuring seamless data management.</li>
+      <li>Orchestrated and streamlined code deployment processes to both local build servers and production
+        environments, leveraging automation tools such as Jenkins and Ansible to enhance efficiency and reliability of
+        releases, significantly reducing deployment times and minimizing downtime.</li>
+    </ul>
+
+    <h2>Technical Projects</h2>
+
+    <h3>Project Management Web App | Angular 8</h3>
+    <ul>
+      <li>Full-stack web app used to estimate project costs and generate quotes and proposals.</li>
+      <li>Deployed on a local server using Docker containers of Angular, PHP, phpMyAdmin, and MySQL.</li>
+      <li>Interfaced with the Jira Cloud API to create issues directly from the application’s UI.</li>
+    </ul>
+
+    <h3>Energy Brokerage Corporate Dashboard | Angular 15</h3>
+    <ul>
+      <li>Full-stack web app used to track energy contracts and monitor energy usage for clients.</li>
+      <li>Designed and implemented user authentication and authorization features using Google Firebase.</li>
+      <li>Used OpenAI’s GPT API to generate predictions based on weather patterns and client energy usage.</li>
+    </ul>
+
+    <h3>Morse Code Beeper | Arduino</h3>
+    <ul>
+      <li>Complete C++ project allowing wireless SPI communications across multiple Arduino microcontrollers.</li>
+      <li>Multiple Arduinos could exchange data between each other by using transceiver modules.</li>
+      <li>An Arduino could be identified and sent data to specific UIDs, like a phone number.</li>
+    </ul>
   </div>
-  <!-- ===== Style Switcher ===== -->
-  <div class="style-switcher">
-    <div class="style-switcher-toggler s-icon">
-      <i class="fas fa-cog"></i>
-    </div>
-    <div class="day-night s-icon">
-      <i class="fas"></i>
-    </div>
-    <h4 style="text-align: center;">Theme</h4>
-    <div class="colors">
-      <span class="color-1" onclick="setActiveStyle('color-1')"></span>
-      <span class="color-2" onclick="setActiveStyle('color-2')"></span>
-      <span class="color-3" onclick="setActiveStyle('color-3')"></span>
-      <span class="color-4" onclick="setActiveStyle('color-4')"></span>
-      <span class="color-5" onclick="setActiveStyle('color-5')"></span>
-    </div>
-  </div>
-  <!-- ===== JS ===== -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
-  <script src="js/script.js"></script>
-  <script src="js/style-switcher.js"></script>
 </body>
+
 </html>
