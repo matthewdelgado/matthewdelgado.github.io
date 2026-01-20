@@ -1,0 +1,30 @@
+---
+import ExperienceItem from './ExperienceItem.astro';
+import { experience } from '../data/experience';
+---
+
+<section id="experience" class="section experience">
+  <div class="container">
+    <div class="section-title">
+      <h2>Experience</h2>
+    </div>
+    <div class="timeline">
+      {experience.map((exp, index) => (
+        <ExperienceItem
+          title={exp.title}
+          company={exp.company}
+          date={exp.date}
+          highlights={exp.highlights}
+          isLast={index === experience.length - 1}
+        />
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .timeline {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+</style>

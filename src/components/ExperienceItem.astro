@@ -1,0 +1,114 @@
+---
+interface Props {
+  title: string;
+  company: string;
+  date: string;
+  highlights: string[];
+  isLast?: boolean;
+}
+
+const { title, company, date, highlights, isLast = false } = Astro.props;
+---
+
+<div class:list={['timeline-item', { 'last': isLast }]}>
+  <div class="timeline-marker"></div>
+  <div class="timeline-content">
+    <div class="timeline-header">
+      <h3>{title}</h3>
+      <span class="company">{company}</span>
+      <span class="date">{date}</span>
+    </div>
+    <ul class="highlights">
+      {highlights.map((highlight) => (
+        <li>{highlight}</li>
+      ))}
+    </ul>
+  </div>
+</div>
+
+<style>
+  .timeline-item {
+    position: relative;
+    padding-left: 40px;
+    padding-bottom: 3rem;
+  }
+
+  .timeline-item.last {
+    padding-bottom: 0;
+  }
+
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: var(--color-border);
+  }
+
+  .timeline-item.last::before {
+    display: none;
+  }
+
+  .timeline-marker {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--color-accent);
+    border: 3px solid var(--color-bg-primary);
+    box-shadow: 0 0 0 2px var(--color-accent);
+  }
+
+  .timeline-content {
+    background-color: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: box-shadow 0.3s ease;
+  }
+
+  .timeline-content:hover {
+    box-shadow: var(--shadow-sm);
+  }
+
+  .timeline-header {
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    font-size: 1.125rem;
+    color: var(--color-text-primary);
+    margin-bottom: 0.25rem;
+  }
+
+  .company {
+    display: block;
+    color: var(--color-accent);
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+  }
+
+  .date {
+    font-size: 0.875rem;
+    color: var(--color-text-secondary);
+  }
+
+  .highlights {
+    list-style: disc;
+    padding-left: 1.25rem;
+  }
+
+  .highlights li {
+    color: var(--color-text-secondary);
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+  }
+
+  .highlights li:last-child {
+    margin-bottom: 0;
+  }
+</style>
